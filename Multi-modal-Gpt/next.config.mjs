@@ -7,13 +7,7 @@ const nextConfig = {
    typescript: {
       ignoreBuildErrors: true,
    },
-    experimental: {
-  turbo: {
-     resolveAlias: {
-       canvas: './empty-module.ts',
-     },
-   },
- },
+   
 }
 
 export default nextConfig

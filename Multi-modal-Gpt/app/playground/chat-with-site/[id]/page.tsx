@@ -1,15 +1,21 @@
 "use client"
 
-import React from "react";
+import React, { use } from "react";
 import WebsiteScrapper from "./_includes/WebsiteScrapper";
 
 type Props = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
-export default function page({ params: { id } }: Props) {
+export default function page(props: Props) {
+  const params = use(props.params);
+
+  const {
+    id
+  } = params;
+
   const [chatId, setChatId] = React.useState<string>("");
 
   React.useEffect(() => {
