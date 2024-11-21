@@ -11,12 +11,12 @@ WORKDIR /app
 
 # Set production environment
 ENV NODE_ENV="production"
-ENV NEXT_PUBLIC_APP_URL="https://multi-modal-gpt.fly.dev"
-ENV NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="pk_test_cHJvLWNyYXlmaXNoLTY3LmNsZXJrLmFjY291bnRzLmRldiQ"
-ENV CLERK_SECRET_KEY="sk_test_gxHWHanQkiy0hcogh9yrA8jwPS2zqGsvk9ZRXB0djA"
+ENV NEXT_PUBLIC_APP_URL=""
+ENV NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
+ENV CLERK_SECRET_KEY=""
 ENV NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
 ENV NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
-ENV NEXT_PUBLIC_BACKEND_URL="https://piyush-multi-divine-breeze-8825.fly.dev/api/v1"
+ENV NEXT_PUBLIC_BACKEND_URL=""
 
 
 # Throw-away build stage to reduce size of final image
